@@ -1,6 +1,6 @@
 export default function NewsLetter() {
   return (
-    <div className="w-2/3 h-[45vh] flex flex-col items-center m-auto py-16 gap-5 mb-36 bg-orange-500">
+    <div className="w-2/3 h-[45vh] flex flex-col items-center m-auto py-16 gap-5 mb-24 bg-orange-500">
       <h1 className="text-4xl text-zinc-900 font-semibold">
         Get Exclusive Offers on your Email
       </h1>
