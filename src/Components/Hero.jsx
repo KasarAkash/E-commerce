@@ -15,7 +15,7 @@ export default function Hero() {
           <p className="font-semibold text-7xl">collections</p>
           <p className="font-semibold text-7xl">for everyone</p>
         </div>
-        <div className="flex justify-center items-center gap-4 w-72 h-14 mt-4 rounded-3xl bg-teal-500 text-white text-lg font-semibold">
+        <div className="flex justify-center items-center cursor-pointer gap-4 w-72 h-14 mt-4 rounded-3xl bg-teal-500 text-white text-lg font-semibold">
           <div>Latest Collection</div>
           <img src={arrowIcon} alt="" />
         </div>
