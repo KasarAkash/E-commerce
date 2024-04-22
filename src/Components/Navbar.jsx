@@ -1,10 +1,11 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
 import cartIcon from "./Assets/cart_icon.png";
 import { Link } from "react-router-dom";
+import { shopContext } from "../Context/ShopContext";
 
 export default function Navbar() {
   const [menu, setMenu] = useState("shop");
-
+  const { getTotalCartItems } = useContext(shopContext);
   return (
     <div className="flex justify-around p-6 border-b text-slate-800">
       <h1 className="font-bold text-2xl">E-commerce</h1>
@@ -56,7 +57,7 @@ export default function Navbar() {
           <img src={cartIcon} alt="" />
         </Link>
         <div className="w-6 h-6 justify-center items-center flex mt-[-30px] ml-[-38px] rounded-full text-sm bg-red-500 text-white font-semibold">
-          0
+          {getTotalCartItems()}
         </div>
       </div>
     </div>
